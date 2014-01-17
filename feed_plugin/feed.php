@@ -31,8 +31,8 @@ require_once('src/facebook.php');
 
 // connect to app
 $config = array();
-$config['appId'] = '527340380667670';
-$config['secret'] = '5f12f9e98ece9b2c3916e8cbe28b592f';
+$config['appId'] = 'your_app_id';
+$config['secret'] = 'your_app_secret';
 $config['fileUpload'] = false; // optional
 
 // instantiate
