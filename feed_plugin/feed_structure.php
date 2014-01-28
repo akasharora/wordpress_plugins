@@ -1,6 +1,5 @@
 
 
-
 <?php 
 
 
@@ -8,7 +7,7 @@ echo "<div class=\"fb-feed\">";
 
 foreach($pagefeed['data'] as $post) {
 
-    if ($post['type'] == 'status' || $post['type'] == 'link' || $post['type'] == 'photo') {
+    if ($post['type']== 'status' || $post['type'] == 'link' || $post['type'] == 'photo') {
 
         // open up an fb-update div
         echo "<div class=\"fb-update\">";
