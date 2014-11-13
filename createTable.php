@@ -1,11 +1,11 @@
 <?php 
 /*
 Plugin Name: Create Database Table
-Plugin URI: abc.com
-Description: Create a table in the database
+Plugin URI: createTable
+Description: Create a table in the database with help of $wpdb
 Author:Akash
 Version:1.0
-Author URI: something.com
+Author URI: https://github.com/akasharora/wordpress_plugins
 */
 function table_creation()
 {
