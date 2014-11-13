@@ -1,15 +1,15 @@
 <?php
 /**
 * Plugin Name: Facebook Feed
-* Plugin URI: zecross.net
+* Plugin URI: https://github.com/akasharora/wordpress_plugins
 * Description: Plugin to display last 5 facebook posts from a page
 * Version: 1.0
 * Author: Akash Arora
-* Author URI: akash.arora@zecross.com
+* Author URI: https://github.com/akasharora/
 */
 
 
-/*  2014  AKASH ARORA  (email : akash.arora@zecross.com)
+/*  2014  AKASH ARORA 
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License, version 2, as 
@@ -37,8 +37,8 @@ $config['fileUpload'] = false; // optional
 
 // instantiate
 $facebook = new Facebook($config);
-$pageID = 297196643687507;
-$pagefeed = $facebook->api('297196643687507/feed?limit=5');
+$page_id = 'your page id here';
+$pagefeed = $facebook->api($page_id.'/feed?limit=5');
 
 
 
@@ -62,8 +62,6 @@ class Facebook_Feed extends WP_Widget
         include ('feed_structure.php');        
         echo $after_widget;
     }
-
-
 }
 
 function facebook_widget_init()
