@@ -5,7 +5,7 @@ Plugin URI: simplewidget.com
 Description: a simple widget
 Author:Akash
 Version:1.0
-Author URI: akash.com
+Author URI: 
 */
 
 class SimpleWidget extends WP_Widget
